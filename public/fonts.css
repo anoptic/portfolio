@@ -1,6 +1,6 @@
 @font-face {
-  font-family: SofiaSans, system-ui, -apple-system, sans-serif;
-  src: url('./assets/fonts/sofia-sans.woff2') format(woff2-variations);
+  font-family: 'SofiaSans';
+  src: url('../public/assets/fonts/sofia-sans.woff2') format('woff2-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
