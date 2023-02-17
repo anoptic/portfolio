@@ -39,34 +39,33 @@ section {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 6vw, 3rem);
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 h4 {
   font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .icons {
   align-items: center;
-  background-color: whitesmoke;
+  background-color: hsla(0, 0%, 96%, 0.96);
   display: flex;
   gap: 1rem;
-  margin: 0 0 1rem 1rem;
   padding-left: 2rem;
-  padding-block: 2px;
+  padding-block: 4px;
 }
 
 .button {
@@ -74,19 +73,33 @@ h4 {
   border-radius: 22px;
 }
 .button:hover {
-  /* background-color: hsl(var(--primary-dark)); */
   border: 6px solid hsl(var(--secondary-color));
-  /* box-shadow: 0 0 0 4 blue; */
 }
 .button:active {
   border: 6px solid hsl(var(--primary-dark));
 }
 
 .nav-icon {
-  /* --stroke-color: hsl(var(--primary-color)); */
   align-items: center;
   display: flex;
   height: 44px;
   justify-content: center;
   width: 44px;
+}
+
+@media (max-width: 479px) {
+  .icons {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 449px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 399px) {
+  .icons {
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+  }
 }
