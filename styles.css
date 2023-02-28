@@ -4,7 +4,8 @@
   --secondary-color: 189, 100%, 35%;
   --secondary-light: 189, 100%, 60%;
   --text-color: hsl(27, 5%, 10%);
-  --bg-color: hsla(var(--primary-color), 0.5);
+  /* --bg-color: hsla(var(--primary-color), 0.5); */
+  --rule: 2px solid var(--text-color);
 }
 
 body {
@@ -30,12 +31,32 @@ section {
   /* scroll-snap-stop: always; */
 }
 
+.section {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  width: min(100%, 1280px);
+}
+
 .image {
   background: linear-gradient(120deg, cyan, slategrey, lightgreen);
-  /* height: auto; */
+  height: auto;
   margin-right: 1rem;
   /* width: 400px; */
   width: clamp(160px, 45vw, 400px);
+}
+.image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.rule-right {
+  border-right: var(--rule);
+}
+.rule-top {
+  border-top: var(--rule);
+  grid-column: 2 / 4;
+  grid-row: 6 / 7;
 }
 
 h1 {
