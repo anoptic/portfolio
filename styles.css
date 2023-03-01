@@ -4,16 +4,12 @@
   --secondary-color: 189, 100%, 35%;
   --secondary-light: 189, 100%, 60%;
   --text-color: hsl(27, 5%, 10%);
-  /* --bg-color: hsla(var(--primary-color), 0.5); */
   --rule: 2px solid var(--text-color);
 }
 
 body {
-  /* align-items: center; */
   background-color: hsl(var(--primary-color));
   color: var(--text-color);
-  /* display: flex; */
-  /* flex-direction: column; */
   font-family: 'SofiaSans', system-ui, sans-serif;
   padding: 0;
 }
@@ -28,7 +24,6 @@ section {
   height: 100vh;
   margin-inline: auto;
   scroll-snap-align: start;
-  /* scroll-snap-stop: always; */
 }
 
 .section {
@@ -41,7 +36,6 @@ section {
   background: linear-gradient(120deg, cyan, slategrey, lightgreen);
   height: auto;
   margin-right: 1rem;
-  /* width: 400px; */
   width: clamp(160px, 45vw, 400px);
 }
 .image img {
@@ -62,22 +56,18 @@ section {
 h1 {
   font-size: clamp(1.5rem, 6vw, 3rem);
   font-weight: 700;
-  /* margin-bottom: 1.5rem; */
 }
 h2 {
   font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 700;
-  /* margin-bottom: 1rem; */
 }
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  /* margin-bottom: 1rem; */
 }
 h4 {
   font-size: 1.125rem;
   font-weight: 700;
-  /* margin-bottom: 1rem; */
 }
 
 .header {
