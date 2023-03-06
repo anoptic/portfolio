@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../public/favicon.png" />
+    <link rel="icon" type="image/png" href="../public/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../public/reset.css" />
     <link rel="stylesheet" href="../public/fonts.css" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../front.css" />
-    <link rel="stylesheet" href="../project.css" />
-    <link rel="stylesheet" href="../back.css" />
+    <!-- <link rel="stylesheet" href="../front.css" /> -->
+    <!-- <link rel="stylesheet" href="../project.css" /> -->
+    <!-- <link rel="stylesheet" href="../back.css" /> -->
 
     <title>John Hornik Portfolio</title>
   </head>
@@ -17,8 +17,15 @@
   <body>
     <main>
       <section class="section front">
-        <div class="image">
-          <img src="../public/assets/images/front.webp" alt="" />
+        <div class="image-container">
+          <img
+            srcset="
+              ../public/assets/images/front-1x.webp,
+              ../public/assets/images/front-2x.webp 2x
+            "
+            src="../public/assets/images/front.jpg"
+            alt=""
+          />
         </div>
         <div class="rule-right"></div>
         <div class="rule-top"></div>
@@ -26,17 +33,26 @@
         <h2 class="header subtitle">Frontend developer</h2>
         <div class="desc">
           <p>
-            Rectissime mihi videris et ad consuetudinem nostrae orationis vitia
-            posuisse contraria. Conferam avum tuum Drusum cum C. Immo istud
-            quidem, inquam, quo loco quidque, nisi iniquum postulo, arbitratu
-            meo.
+            I build elegant user interfaces and compelling experiences with a
+            people-centered approach to technology and development. The frontend
+            is where cold technology is imbued with the warm glow of human
+            interaction and abstract concepts become useful tools for people to
+            get things done. I love turning complex ideas into accessible,
+            human-useable products and experiences.
           </p>
         </div>
       </section>
 
       <section class="section project">
-        <div class="image">
-          <img src="../public/assets/images/unfunk.webp" alt="" />
+        <div class="image-container">
+          <img
+            srcset="
+              ../public/assets/images/unfunk-1x.webp,
+              ../public/assets/images/unfunk-2x.webp 2x
+            "
+            src="../public/assets/images/unfunk.jpg"
+            alt=""
+          />
         </div>
         <div class="rule-right rule-right1"></div>
         <div class="rule-right rule-right2"></div>
@@ -45,11 +61,16 @@
         <h4 class="header subtitle">E-commerce concept</h4>
         <div class="desc">
           <p>
-            Rectissime mihi videris et ad consuetudinem nostrae orationis vitia
-            posuisse contraria. Conferam avum tuum Drusum cum C. Immo istud
-            quidem, inquam, quo loco quidque, nisi iniquum postulo, arbitratu
-            meo.
+            You need shoes. You need a simple, effective layout and clean,
+            maintainable code.
           </p>
+          <p>Technologies used:</p>
+          <ul>
+            <li>Typescript</li>
+            <li>React</li>
+            <li>Next</li>
+            <li>Radix UI</li>
+          </ul>
         </div>
         <div class="nav">
           <div class="icons">
@@ -80,8 +101,15 @@
       </section>
 
       <section class="section project">
-        <div class="image">
-          <img src="../public/assets/images/sort.webp" alt="" />
+        <div class="image-container">
+          <img
+            srcset="
+              ../public/assets/images/sort-1x.webp,
+              ../public/assets/images/sort-2x.webp 2x
+            "
+            src="../public/assets/images/sort.jpg"
+            alt=""
+          />
         </div>
         <div class="rule-right rule-right1"></div>
         <div class="rule-right rule-right2"></div>
@@ -90,11 +118,16 @@
         <h4 class="header subtitle">Image editor</h4>
         <div class="desc">
           <p>
-            Rectissime mihi videris et ad consuetudinem nostrae orationis vitia
-            posuisse contraria. Conferam avum tuum Drusum cum C. Immo istud
-            quidem, inquam, quo loco quidque, nisi iniquum postulo, arbitratu
-            meo.
+            The web is a visual medium. The web is a visual medium. The web is a
+            visual medium. The web is a visual medium. The web is a visual
+            medium. The web is a visual medium.
           </p>
+          <p>Technologies used:</p>
+          <ul>
+            <li>Typescript</li>
+            <li>React</li>
+            <li>MUI</li>
+          </ul>
         </div>
         <div class="nav">
           <div class="icons">
@@ -125,8 +158,15 @@
       </section>
 
       <section class="section back">
-        <div class="image">
-          <img src="../public/assets/images/back.webp" alt="" />
+        <div class="image-container">
+          <img
+            srcset="
+              ../public/assets/images/back-1x.webp,
+              ../public/assets/images/back-2x.webp 2x
+            "
+            src="../public/assets/images/back.jpg"
+            alt=""
+          />
         </div>
         <div class="rule-right rule-right1"></div>
         <div class="rule-right rule-right2"></div>
@@ -135,10 +175,8 @@
         <h2 class="header subtitle">About building things</h2>
         <div class="desc">
           <p>
-            Rectissime mihi videris et ad consuetudinem nostrae orationis vitia
-            posuisse contraria. Conferam avum tuum Drusum cum C. Immo istud
-            quidem, inquam, quo loco quidque, nisi iniquum postulo, arbitratu
-            meo.
+            Have a project or an opportunity you’d like to discuss? I’m always
+            interested. Check out my profiles and drop me a message.
           </p>
         </div>
 
