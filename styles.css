@@ -3,13 +3,13 @@
   --primary-dark: 27, 80%, 40%;
   --secondary-color: 189, 100%, 35%;
   --secondary-light: 189, 100%, 60%;
-  --text-color: hsl(27, 5%, 10%);
-  --rule: 2px solid var(--text-color);
+  --text-color: 27, 5%, 10%;
+  --rule: 2px solid hsl(var(--text-color));
 }
 
 body {
   background-color: hsl(var(--primary-color));
-  color: var(--text-color);
+  color: hsl(var(--text-color));
   font-family: 'SofiaSans', system-ui, sans-serif;
   padding: 0;
 }
@@ -86,6 +86,10 @@ h4 {
   padding: 0 1rem 1rem;
 }
 
+.desc ul {
+  padding-left: 1rem;
+}
+
 .icons {
   align-items: center;
   background-color: hsla(0, 0%, 96%, 0.96);
@@ -101,9 +105,11 @@ h4 {
 }
 .button:hover {
   border: 6px solid hsl(var(--secondary-color));
+  box-shadow: 0 0 4px 2px hsla(var(--text-color), 0.5);
 }
 .button:active {
   border: 6px solid hsl(var(--primary-dark));
+  box-shadow: 0 0 0 0 hsla(var(--text-color), 0);
 }
 
 .nav-icon {
